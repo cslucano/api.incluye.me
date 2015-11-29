@@ -46,6 +46,7 @@ class DefaultController extends Controller
                     'project_type' => $item->getProjectType(),
                     'description' => $item->getDescription(),
                     'image' => $item->getImage(),
+                    'url' => $item->getUrl(),
                 ];
             },
             $projects

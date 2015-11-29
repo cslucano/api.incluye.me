@@ -77,6 +77,13 @@ class Project
      */
     private $image;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="url", type="string", length=255, nullable=true)
+     */
+    private $url;
+
 
     /**
      * Get id
@@ -276,6 +283,26 @@ class Project
     public function setImage($image)
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUrl()
+    {
+        return $this->url;
+    }
+
+    /**
+     * @param string $url
+     *
+     * @return $this
+     */
+    public function setUrl($url)
+    {
+        $this->url = $url;
 
         return $this;
     }
