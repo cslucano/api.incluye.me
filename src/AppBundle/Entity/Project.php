@@ -63,6 +63,13 @@ class Project
      */
     private $projectType;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=1024)
+     */
+    private $description;
+
 
     /**
      * Get id
@@ -216,6 +223,30 @@ class Project
     public function getProjectType()
     {
         return $this->projectType;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     *
+     * @return Project
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
     }
 }
 
