@@ -36,9 +36,9 @@ class Project
     private $shortName;
 
     /**
-     * @var string
+     * @var array
      *
-     * @ORM\Column(name="disability_type", type="string", length=255)
+     * @ORM\Column(name="disability_type", type="array")
      */
     private $disabilityType;
 
@@ -125,7 +125,7 @@ class Project
     /**
      * Set disabilityType
      *
-     * @param string $disabilityType
+     * @param array $disabilityType
      *
      * @return Project
      */
@@ -139,7 +139,7 @@ class Project
     /**
      * Get disabilityType
      *
-     * @return string
+     * @return array
      */
     public function getDisabilityType()
     {

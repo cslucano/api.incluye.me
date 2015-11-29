@@ -13,7 +13,7 @@ class LoadUserData implements FixtureInterface
         $project = new Project();
         $project->setName('Ponte Linda');
         $project->setShortName('Ponte Linda');
-        $project->setDisabilityType('Discapacidad Motora');
+        $project->setDisabilityType(['Discapacidad Motora', 'Discapacidad Intelectual']);
         $project->setGender('15');
         $project->setProjectLevel('básico');
         $project->setProjectType('imagen personal');
@@ -25,7 +25,7 @@ class LoadUserData implements FixtureInterface
         $project = new Project();
         $project->setName('Adaptacion de Llave');
         $project->setShortName('Adaptacion de Llave');
-        $project->setDisabilityType('Discapacidad Motora');
+        $project->setDisabilityType(['Discapacidad Motora']);
         $project->setGender('25');
         $project->setProjectLevel('básico');
         $project->setProjectType('prótesis');
@@ -36,7 +36,7 @@ class LoadUserData implements FixtureInterface
         $project = new Project();
         $project->setName('Tabla de Resonancia');
         $project->setShortName('Tabla de Resonancia');
-        $project->setDisabilityType('Discapacidad Auditiva');
+        $project->setDisabilityType(['Discapacidad Auditiva', 'Transtorno del Especto Autista', 'Sordoceguera']);
         $project->setGender('30');
         $project->setProjectLevel('complejo');
         $project->setProjectType('prótesis');
