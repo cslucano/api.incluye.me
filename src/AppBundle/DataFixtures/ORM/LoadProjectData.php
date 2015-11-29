@@ -18,8 +18,31 @@ class LoadUserData implements FixtureInterface
         $project->setProjectLevel('básico');
         $project->setProjectType('imagen personal');
 
+        $manager->persist($project);
+        $manager->flush();
+
+
+        $project = new Project();
+        $project->setName('Adaptacion de Llave');
+        $project->setShortName('Adaptacion de Llave');
+        $project->setDisabilityType('Discapacidad Motora');
+        $project->setGender('25');
+        $project->setProjectLevel('básico');
+        $project->setProjectType('prótesis');
 
         $manager->persist($project);
         $manager->flush();
+
+        $project = new Project();
+        $project->setName('Tabla de Resonancia');
+        $project->setShortName('Tabla de Resonancia');
+        $project->setDisabilityType('Discapacidad Auditiva');
+        $project->setGender('30');
+        $project->setProjectLevel('complejo');
+        $project->setProjectType('prótesis');
+
+        $manager->persist($project);
+        $manager->flush();
+
     }
 }
